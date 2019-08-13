@@ -21,9 +21,25 @@ class MainActivity : AppCompatActivity() {
         //image:
         val contactImage = ContextCompat.getDrawable(this, R.drawable.abstract_abstract_expressionism_art_2505693)
 
+
+
+
+
+
         val data = mutableListOf<ImageData>()
         // this if statement changes Drawable? to Drawable
         if(contactImage != null) {
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
+            data.add(ImageData("title", "description", contactImage))
             data.add(ImageData("title", "description", contactImage))
         }
 
