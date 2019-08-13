@@ -19,14 +19,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //image:
-        val contactImage = ContextCompat.getDrawable(this, R.drawable.abstract_abstract_expressionism_art_2505693)
-
-
-
-
-
 
         val data = mutableListOf<ImageData>()
+        var contactImage = ContextCompat.getDrawable(this, R.drawable.abstract_abstract_expressionism_art_2505693)
+        var contactImage2 =ContextCompat.getDrawable(this, R.drawable.adventure_automobile_classic_2533092)
+        
+
+
+
         // this if statement changes Drawable? to Drawable
         if(contactImage != null) {
             data.add(ImageData("title", "description", contactImage))
@@ -40,8 +40,10 @@ class MainActivity : AppCompatActivity() {
             data.add(ImageData("title", "description", contactImage))
             data.add(ImageData("title", "description", contactImage))
             data.add(ImageData("title", "description", contactImage))
-            data.add(ImageData("title", "description", contactImage))
+            if(contactImage2 != null)
+            data.add(ImageData("title", "description", contactImage2))
         }
+
 
 
         //populate data
